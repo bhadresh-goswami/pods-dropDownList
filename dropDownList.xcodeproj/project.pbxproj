@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4FEFD00821CBD28D00432DF0 /* dropDownList.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FEFD00621CBD28D00432DF0 /* dropDownList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FEFD00F21CBD2BA00432DF0 /* dropDownListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEFD00E21CBD2BA00432DF0 /* dropDownListTable.swift */; };
+		4FEFD01121CBD34000432DF0 /* dropDownLst.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4FEFD01021CBD34000432DF0 /* dropDownLst.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4FEFD00321CBD28D00432DF0 /* dropDownList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dropDownList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEFD00621CBD28D00432DF0 /* dropDownList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dropDownList.h; sourceTree = "<group>"; };
 		4FEFD00721CBD28D00432DF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FEFD00E21CBD2BA00432DF0 /* dropDownListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dropDownListTable.swift; sourceTree = "<group>"; };
+		4FEFD01021CBD34000432DF0 /* dropDownLst.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dropDownLst.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +50,10 @@
 		4FEFD00521CBD28D00432DF0 /* dropDownList */ = {
 			isa = PBXGroup;
 			children = (
+				4FEFD01021CBD34000432DF0 /* dropDownLst.podspec */,
 				4FEFD00621CBD28D00432DF0 /* dropDownList.h */,
 				4FEFD00721CBD28D00432DF0 /* Info.plist */,
+				4FEFD00E21CBD2BA00432DF0 /* dropDownListTable.swift */,
 			);
 			path = dropDownList;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					4FEFD00221CBD28D00432DF0 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FEFD01121CBD34000432DF0 /* dropDownLst.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FEFD00F21CBD2BA00432DF0 /* dropDownListTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 		4FEFD00C21CBD28D00432DF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -265,6 +275,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bhadresh.dropDownList;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,6 +284,7 @@
 		4FEFD00D21CBD28D00432DF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
