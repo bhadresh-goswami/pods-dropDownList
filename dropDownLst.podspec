@@ -91,8 +91,8 @@ this is test lib
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "dropDownList.h"
-#s.exclude_files = "Classes/Exclude"
+  s.source_files  = "dropDownList", "Classes/**/*.{h,m}"
+  s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
